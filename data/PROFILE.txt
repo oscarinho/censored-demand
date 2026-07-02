@@ -1,0 +1,36 @@
+Descargando Dingdong-Inc/FreshRetailNet-50K ...
+Splits: {'train': 4500000, 'eval': 350000}
+
+=== SHAPE === (4500000, 19)
+
+=== COLUMNAS / DTYPES ===
+  city_id                  int64        ej: np.int64(0)
+  store_id                 int64        ej: np.int64(0)
+  management_group_id      int64        ej: np.int64(0)
+  first_category_id        int64        ej: np.int64(5)
+  second_category_id       int64        ej: np.int64(6)
+  third_category_id        int64        ej: np.int64(65)
+  product_id               int64        ej: np.int64(38)
+  dt                       object       ej: '2024-03-28'
+  sale_amount              float64      ej: np.float64(0.1)
+  hours_sale               object       ej: array([0. , 0. , 0. , 0. , 0. , 0. , 0. , 0.1, 0. , 0. , 0. 
+  stock_hour6_22_cnt       int32        ej: np.int32(0)
+  hours_stock_status       object       ej: array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  discount                 float64      ej: np.float64(1.0)
+  holiday_flag             int32        ej: np.int32(0)
+  activity_flag            int32        ej: np.int32(0)
+  precpt                   float64      ej: np.float64(1.6999)
+  avg_temperature          float64      ej: np.float64(15.48)
+  avg_humidity             float64      ej: np.float64(73.54)
+  avg_wind_level           float64      ej: np.float64(1.97)
+
+Muestra guardada: (20000, 19) -> data/freshretailnet_train_sample.parquet
+
+=== SEÑALES DE CENSURA / STOCKOUT ===
+  stock/stockout  : ['stock_hour6_22_cnt', 'hours_stock_status']
+  venta/sale      : ['sale_amount', 'hours_sale']
+  descuento       : ['discount']
+  clima           : ['precpt', 'avg_temperature', 'avg_humidity']
+  fecha           : ['dt', 'hours_sale', 'stock_hour6_22_cnt', 'hours_stock_status', 'holiday_flag']
+
+Columnas tipo lista (probable serie horaria 24h): ['hours_sale', 'hours_stock_status']

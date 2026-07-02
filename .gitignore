@@ -1,0 +1,34 @@
+# Python / Jupyter
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS / entorno / agente
+.DS_Store
+.claude/
+
+# logs de entrenamiento
+catboost_info/
+lightning_logs/
+
+# Datos: FreshRetailNet-50K se descarga de HuggingFace (no se versiona)
+data/*.parquet
+data/*.csv
+
+# Paper: no redistribuir el PDF ni el texto extraído; se cita como arXiv:2505.16319
+docs/*.pdf
+docs/paper.txt
+
+# Imagen de terceros (adaptada de Daniel Zaldaña) — no redistribuir
+assets/forecastings-models.jpg
+
+# Backups y auditorías locales (generados en sesión)
+*.bak
+**/*.bak
+notebooks/*_audit/
+notebooks/*_audit.zip
+
+# node
+node_modules/
