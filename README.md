@@ -38,7 +38,7 @@ Esto se llama **censored demand estimation / latent demand recovery / demand unc
 
 **FreshRetailNet-50K** (Dingdong-Inc, HuggingFace) — el primer benchmark grande de demanda **censurada con anotación de stockouts**:
 - 50,000 series tienda × producto, 90 días, **resolución horaria**.
-- 898 tiendas, 18 ciudades, 865 SKUs perecederos.
+- 898 tiendas, 18 ciudades, 863 SKUs perecederos.
 - ~20% de datos con quiebre de stock **etiquetado** (la mayoría de datasets esconden esto).
 - Incluye descuentos, clima (lluvia, temperatura, humedad), y covariables.
 
